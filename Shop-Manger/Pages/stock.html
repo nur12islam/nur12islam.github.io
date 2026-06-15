@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Stock Management</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+background:#f4f6fb;
+padding-bottom:100px;
+}
+
+header{
+position:sticky;
+top:0;
+background:white;
+padding:18px;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+z-index:100;
+}
+
+h1{
+font-size:24px;
+margin-bottom:15px;
+}
+
+input{
+width:100%;
+padding:14px;
+border:none;
+border-radius:15px;
+background:#eef2f7;
+outline:none;
+font-size:15px;
+}
+
+.container{
+padding:15px;
+}
+
+.card{
+background:white;
+padding:18px;
+border-radius:18px;
+margin-bottom:15px;
+box-shadow:0 4px 12px rgba(0,0,0,.06);
+}
+
+.brand{
+font-size:13px;
+color:gray;
+}
+
+.name{
+font-size:20px;
+font-weight:700;
+margin-top:5px;
+}
+
+.stock{
+margin-top:10px;
+font-size:18px;
+font-weight:bold;
+color:#16a34a;
+}
+
+.rack{
+margin-top:6px;
+color:#666;
+}
+
+.buttons{
+display:flex;
+gap:10px;
+margin-top:15px;
+}
+
+button{
+flex:1;
+padding:12px;
+border:none;
+border-radius:12px;
+font-size:15px;
+font-weight:600;
+cursor:pointer;
+}
+
+.add{
+background:#16a34a;
+color:white;
+}
+
+.remove{
+background:#ef4444;
+color:white;
+}
+
+.history{
+background:#2563eb;
+color:white;
+margin-top:10px;
+width:100%;
+}
+
+.summary{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+padding:15px;
+}
+
+.box{
+background:white;
+padding:18px;
+border-radius:18px;
+text-align:center;
+box-shadow:0 4px 12px rgba(0,0,0,.06);
+}
+
+.box h2{
+font-size:28px;
+color:#2563eb;
+}
+
+.bottom{
+position:fixed;
+bottom:0;
+left:0;
+right:0;
+height:70px;
+background:white;
+display:flex;
+justify-content:space-around;
+align-items:center;
+box-shadow:0 -2px 10px rgba(0,0,0,.08);
+}
+
+.nav{
+text-align:center;
+font-size:12px;
+}
+
+.nav div{
+font-size:24px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>📦 Stock Management</h1>
+
+<input placeholder="Search Product">
+
+</header>
+
+<div class="summary">
+
+<div class="box">
+
+<p>Total Products</p>
+
+<h2>842</h2>
+
+</div>
+
+<div class="box">
+
+<p>Low Stock</p>
+
+<h2>18</h2>
+
+</div>
+
+</div>
+
+<div class="container">
+
+<div class="card">
+
+<div class="brand">CLASSMATES</div>
+
+<div class="name">Long Notebook 172</div>
+
+<div class="stock">Stock : 150</div>
+
+<div class="rack">Rack : B2</div>
+
+<div class="buttons">
+
+<button class="add">+ Add</button>
+
+<button class="remove">- Remove</button>
+
+</div>
+
+<button class="history">Stock History</button>
+
+</div>
+
+<div class="card">
+
+<div class="brand">DOMS</div>
+
+<div class="name">Drawing Book</div>
+
+<div class="stock">Stock : 35</div>
+
+<div class="rack">Rack : C1</div>
+
+<div class="buttons">
+
+<button class="add">+ Add</button>
+
+<button class="remove">- Remove</button>
+
+</div>
+
+<button class="history">Stock History</button>
+
+</div>
+
+</div>
+
+<div class="bottom">
+
+<div class="nav">
+
+<div>🏠</div>
+
+Home
+
+</div>
+
+<div class="nav">
+
+<div>📦</div>
+
+Products
+
+</div>
+
+<div class="nav">
+
+<div>🔍</div>
+
+Search
+
+</div>
+
+<div class="nav">
+
+<div>🧾</div>
+
+Billing
+
+</div>
+
+<div class="nav">
+
+<div>⚙️</div>
+
+Settings
+
+</div>
+
+</div>
+
+</body>
+</html>
