@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Search Product</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+background:#f4f6fb;
+padding-bottom:90px;
+}
+
+header{
+
+position:sticky;
+
+top:0;
+
+background:white;
+
+padding:15px;
+
+box-shadow:0 2px 12px rgba(0,0,0,.08);
+
+z-index:100;
+
+}
+
+.title{
+
+font-size:24px;
+
+font-weight:700;
+
+margin-bottom:15px;
+
+}
+
+.search{
+
+width:100%;
+
+padding:16px;
+
+border:none;
+
+border-radius:18px;
+
+background:#eef2f7;
+
+font-size:16px;
+
+outline:none;
+
+}
+
+.filters{
+
+display:flex;
+
+overflow:auto;
+
+gap:10px;
+
+padding-top:15px;
+
+}
+
+.filter{
+
+padding:10px 18px;
+
+background:#2563eb;
+
+color:white;
+
+border-radius:30px;
+
+white-space:nowrap;
+
+font-size:14px;
+
+}
+
+.container{
+
+padding:15px;
+
+}
+
+.product{
+
+background:white;
+
+border-radius:20px;
+
+padding:18px;
+
+margin-bottom:15px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.05);
+
+}
+
+.brand{
+
+font-size:13px;
+
+color:gray;
+
+}
+
+.name{
+
+font-size:22px;
+
+font-weight:700;
+
+margin-top:5px;
+
+}
+
+.price{
+
+font-size:30px;
+
+font-weight:bold;
+
+color:#2563eb;
+
+margin-top:12px;
+
+}
+
+.row{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:10px;
+
+margin-top:15px;
+
+}
+
+.box{
+
+background:#f8fafc;
+
+padding:12px;
+
+border-radius:12px;
+
+font-size:14px;
+
+}
+
+.buttons{
+
+display:flex;
+
+gap:10px;
+
+margin-top:15px;
+
+}
+
+button{
+
+flex:1;
+
+padding:13px;
+
+border:none;
+
+border-radius:12px;
+
+cursor:pointer;
+
+font-weight:600;
+
+}
+
+.bill{
+
+background:#16a34a;
+
+color:white;
+
+}
+
+.edit{
+
+background:#2563eb;
+
+color:white;
+
+}
+
+.favorite{
+
+margin-top:10px;
+
+width:100%;
+
+background:#facc15;
+
+}
+
+.scan{
+
+position:fixed;
+
+bottom:90px;
+
+right:20px;
+
+width:65px;
+
+height:65px;
+
+border-radius:50%;
+
+background:#2563eb;
+
+color:white;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:30px;
+
+box-shadow:0 10px 25px rgba(37,99,235,.35);
+
+}
+
+.bottom{
+
+position:fixed;
+
+bottom:0;
+
+left:0;
+
+right:0;
+
+height:70px;
+
+background:white;
+
+display:flex;
+
+justify-content:space-around;
+
+align-items:center;
+
+box-shadow:0 -2px 15px rgba(0,0,0,.08);
+
+}
+
+.item{
+
+text-align:center;
+
+font-size:12px;
+
+}
+
+.item div{
+
+font-size:24px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="title">
+
+🔍 Search Product
+
+</div>
+
+<input class="search"
+
+placeholder="Search brand, pages, barcode, rack...">
+
+<div class="filters">
+
+<div class="filter">Classmates</div>
+
+<div class="filter">172 Pages</div>
+
+<div class="filter">A4</div>
+
+<div class="filter">Notebook</div>
+
+</div>
+
+</header>
+
+<div class="container">
+
+<div class="product">
+
+<div class="brand">
+
+CLASSMATES
+
+</div>
+
+<div class="name">
+
+Long Notebook
+
+</div>
+
+<div class="price">
+
+₹128
+
+</div>
+
+<div class="row">
+
+<div class="box">
+
+📄 172 Pages
+
+</div>
+
+<div class="box">
+
+📏 A4 Size
+
+</div>
+
+<div class="box">
+
+📦 Stock 150
+
+</div>
+
+<div class="box">
+
+📍 Rack B2
+
+</div>
+
+<div class="box">
+
+🏷 MRP ₹140
+
+</div>
+
+<div class="box">
+
+🛒 Wholesale ₹118
+
+</div>
+
+</div>
+
+<div class="buttons">
+
+<button class="bill">
+
+Add to Bill
+
+</button>
+
+<button class="edit">
+
+Edit
+
+</button>
+
+</div>
+
+<button class="favorite">
+
+⭐ Add to Favorites
+
+</button>
+
+</div>
+
+</div>
+
+<div class="scan">
+
+📷
+
+</div>
+
+<div class="bottom">
+
+<div class="item">
+
+<div>🏠</div>
+
+Home
+
+</div>
+
+<div class="item">
+
+<div>📦</div>
+
+Products
+
+</div>
+
+<div class="item">
+
+<div>🔍</div>
+
+Search
+
+</div>
+
+<div class="item">
+
+<div>🧾</div>
+
+Bills
+
+</div>
+
+<div class="item">
+
+<div>⚙️</div>
+
+Settings
+
+</div>
+
+</div>
+
+</body>
+
+</html>
